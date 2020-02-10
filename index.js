@@ -16,14 +16,14 @@ console.log("Name 3 has " + input3 + " letters");
 function myFunction() {
   document.getElementById("labTwo").innerHTML = input1;
 }
-if (name1.length > name2.length) {
+if (name1.length > name2.length && name1.length > name3.length) {
   document.getElementById("labTwo");
-  window.alert("Name 1 is longer than name 2");
-} else if (name1.length > name3.length) {
+  window.alert("Name 1 is longest");
+} else if (name2.length > name3.length && name2.length > name1.length) {
   document.getElementById("labTwo");
-  window.alert("Name 1 is longer than name 3");
-} else name2.length > name3.length;
+  window.alert("Name 2 is longest");
+} else name3.length > name1.length && name3.length > name2.length;
 {
   document.getElementById("labTwo");
-  window.alert("Name 2 is longer than name 3");
+  window.alert("Name 3 is longest");
 }
